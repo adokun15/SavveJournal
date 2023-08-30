@@ -1,0 +1,48 @@
+.view {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    min-height: 3rem;
+    padding: 10px 2rem;
+    margin-bottom: 1rem;
+    max-width: 60%;
+    min-width: 30%;
+    word-wrap: break-word;
+
+    overflow: hidden;
+}
+
+.view p {
+    font-size: 1.6rem;
+    max-width: 60%;
+    margin: 1rem 0;
+}
+
+.view button {
+    background: none;
+    border: none;
+    outline: none;
+    color: var(--theme-color);
+    padding: 10px 3rem;
+    padding-left: 2px;
+    font-size: 1.2rem;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+@media screen and (max-width:600px) {
+    .view {
+        padding: 0;
+        word-wrap: normal;
+        max-width: 100%;
+        min-height: 3rem;
+        grid-row: 5/6;
+        grid-column: 1/5;
+    }
+
+    .view p {
+        font-size: 1rem;
+        max-width: 80%;
+        padding: 0 1rem;
+        margin: 1rem 0;
+    }
+}

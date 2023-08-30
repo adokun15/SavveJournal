@@ -1,0 +1,34 @@
+.JournalNav {
+    display: flex;
+    padding: 1.5rem 0;
+    gap: 2rem;
+}
+
+.JournalNav li {
+    list-style-type: none;
+}
+
+.JournalNav li a,
+.logout {
+    color: black;
+    background: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.active {
+    border-bottom: 2px solid var(--theme-color);
+    color: var(--theme-color);
+}
+
+.logout {
+    border: none;
+}
+
+@media screen and (max-width:600px) {
+    .JournalNav {
+        grid-column: 1/5;
+        justify-content: center;
+    }
+}

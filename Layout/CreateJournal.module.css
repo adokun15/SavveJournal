@@ -1,0 +1,88 @@
+.CreateContainer {
+    grid-row: 2/5;
+}
+
+.CreateContainer h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.CreateContainerTextArea {
+    height: 12rem;
+    width: 80%;
+    margin: 2rem auto;
+    resize: none;
+    border: none;
+    padding: 1px 3px;
+    outline: none;
+    transition: all 0.1s;
+    border: 1px solid var(--theme-color);
+    box-shadow: 0 .2px 0.2rem black;
+}
+
+.CreateContainerTextArea:focus,
+.CreateContainerTextArea:hover {
+    border: none;
+    border: 3px solid var(--theme-color);
+
+}
+
+.CreateContainerTextArea:disabled {
+    background-color: var(--disabled-color);
+
+}
+
+.CreateContainerBtn {
+    width: 80%;
+    margin: 1rem auto;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+    cursor: pointer;
+    background: var(--theme-color);
+    padding: .4rem 0.5rem;
+}
+
+.CreateContainer>* {
+    display: block;
+}
+
+.CreateContainerBtn:disabled {
+    background-color: var(--disabled-color);
+
+}
+
+
+@media screen and (max-width:600px) {
+    .CreateContainer {
+        grid-row: 3/5;
+        grid-column: 1/5;
+    }
+
+
+    .CreateContainerTextArea {
+        height: 6rem;
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+        font-size: 0.7rem;
+        padding: 10px 1rem;
+    }
+
+
+    .CreateContainer h2 {
+        font-size: 1.3rem;
+    }
+
+
+    .CreateContainerBtn {
+        width: 30%;
+        font-size: 0.8rem;
+        margin: 1rem auto;
+        padding: .4rem 0;
+    }
+
+}

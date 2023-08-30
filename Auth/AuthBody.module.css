@@ -1,0 +1,152 @@
+.auth {
+    width: 40%;
+    z-index: 50;
+    background-color: white;
+    margin: auto;
+    height: fit-content;
+    padding: 1rem 0;
+    border-radius: 0.7rem;
+    position: relative;
+    padding-top: 1rem;
+    margin-top: 1.8rem;
+    transition: all 0.3s;
+}
+
+.auth h1 {
+    font-size: 1.4rem;
+    margin: 0.9rem 0;
+    text-align: center;
+}
+
+.auth h1 span {
+    font-size: 1.5rem;
+    color: var(--theme-color)
+}
+
+.auth form label {
+    margin-top: 2rem;
+}
+
+.auth form>* {
+    display: block;
+}
+
+/*Auth Nav*/
+.authnav {
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+}
+
+.authnav .navBtn {
+    background-color: red;
+    width: 100%;
+    font-size: 1.3rem;
+    min-height: 2.3rem;
+    background: none;
+    border: none;
+}
+
+
+.authnav .btnActive {
+    border-bottom: 2.3px solid var(--theme-color);
+
+}
+
+/*Auth container*/
+.authContainer {
+    max-width: 80rem;
+    height: fit-content;
+    padding: 1rem 0;
+}
+
+.authFormContainer {
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    line-height: 1rem;
+}
+
+.authForm {
+    height: fit-content;
+    width: 70%;
+    background: none;
+    transition: all 0.2s;
+    margin: auto;
+}
+
+.input {
+    max-width: 80%;
+    ;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 1.4rem;
+    margin: 3.3rem 0;
+    border-bottom: 2px solid var(--theme-color);
+    background-color: rgb(221, 247, 244);
+    padding: 0.6rem;
+}
+
+
+.authForm button {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: var(--theme-color);
+    padding: 8px 0;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.authForm button:hover,
+.authForm button:focus {
+    background-color: rgba(7, 67, 71, 0.964);
+}
+
+.closeBody {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    bottom: 5px;
+    width: 100%;
+}
+
+.closeBtn {
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    font-family: sans-serif;
+    font-size: 3rem;
+    color: black;
+    margin: auto;
+}
+
+.errMes {
+    color: red;
+    font-size: 0.8rem;
+    font-style: italic;
+    margin-top: 0.7rem;
+}
+
+@media screen and (max-width:600px) {
+    .auth {
+        width: 90%;
+        height: fit-content;
+    }
+
+    .authForm {
+        width: 80%;
+    }
+
+    .input {
+        max-width: 95%;
+        width: 100%;
+    }
+
+    .closeBtn {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,142 @@
+.JournalList {
+    grid-row: 3/5;
+    grid-column: 2/4;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow: hidden;
+    grid-auto-rows: auto;
+    gap: 1rem 2rem;
+    padding: 2rem 0;
+    padding-right: 3rem;
+    transition: all 0.5s;
+}
+
+
+.listStory {
+    padding: 10px 1rem;
+    font-size: 1.3rem;
+    max-width: 100%;
+    border-radius: 9px;
+    overflow: hidden;
+    word-wrap: break-word;
+    height: fit-content;
+    background-color: rgba(127, 221, 191, 0.572);
+}
+
+.listStory h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+
+.listStory h3 p {
+    display: inline;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.listStoryArticle {
+    height: 6rem;
+    min-height: 65%;
+    max-height: 80%;
+    overflow: hidden;
+}
+
+.listAction {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.listAction .icon {
+    padding: .1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.listAction .icon button img {
+    width: 100%;
+    height: 100%;
+}
+
+.listAction button {
+    min-width: 20%;
+    background: none;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    background: var(--theme-color);
+}
+
+.emptyJournal {
+    grid-row: 3/5;
+    grid-column: 2/4;
+    text-align: center;
+    margin: 3rem;
+}
+
+@media screen and (max-width:600px) {
+    .JournalList {
+        grid-row: 5/6;
+        grid-column: 1/5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .listStory {
+        font-size: 0.9rem;
+
+    }
+
+
+    .listStory h3 {
+        font-size: 1.1rem;
+    }
+
+    .listStory h3 p {
+        font-size: 0.8rem;
+    }
+
+
+    .listStoryArticle {
+        height: 5.3rem;
+        min-height: 65%;
+        margin-bottom: 3px;
+
+    }
+
+
+    .listAction {
+        justify-content: space-around;
+        align-items: center;
+        padding: 0.1rem 0;
+    }
+
+    .listAction button {
+        padding: 0;
+    }
+
+    .listAction button .icon {
+        opacity: 1;
+        padding: 0.4rem .2rem;
+        height: 100%;
+        margin: auto;
+    }
+
+    .listAction button img {
+        width: 95%;
+        max-width: 1.3rem;
+        height: 95%;
+    }
+
+
+    .emptyJournal {
+        grid-row: 5/6;
+        grid-column: 2/4;
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 1.1rem;
+    }
+}
